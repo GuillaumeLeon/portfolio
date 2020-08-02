@@ -28,7 +28,7 @@
                 <li><a class="nav-link" href="#diplome">Diplômes</a></li>
                 <li><a class="nav-link" href="#experience">Expérience</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
-                <li><a class="nav-link" href="./CV_Guillaume-LEON.pdf" target="_blank">CV</a></li>
+                <li><a class="nav-link" href="{{ asset('pdf/CV_Guillaume-LEON.pdf') }}" target="_blank">CV</a></li>
             </ul>
         </ul>
     </div>
