@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+.titre {
+  width: auto;
+  background: #375a7f;
+  color: azure;
+  height: 5em;
+}
+.titre h3{
+  margin-top:56px;
+  padding-top: 15px;
+  padding-left: 50px;
+}
+
+section {
+  height: 100vh;
+}
+
+
+@media screen
+and (min-device-width: 320px)
+and (max-device-width: 480px){
+  section {
+    min-height: 225vh;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+  section {
+    min-height: 160vh;
+  }
+}
+.card {
+  border-radius: 10px;
+}
