@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::middleware('web')->get('/', 'HomeController@index');
 
 Route::middleware('web')->post('/contact', 'ContactController@index');

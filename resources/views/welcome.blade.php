@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
     <script src="{{ asset('js/font_awesome.js') }}"></script>
     <script src="{{ asset('js/jquery-3.5.1.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
     <title>Guillaume Leon</title>
 </head>
@@ -18,6 +19,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Portfolio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbar">
@@ -38,16 +40,31 @@
         <h3>Projet</h3>
     </div>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="card shadow m-4" style="width: 19rem;">
-                <div class="card-header p-2">
-                    <img alt="Logo creationlab" src="image/creationlab.png" width="279" height="186" />
+        <div class="row">
+            @foreach($response as $project)
+{{--        {{ dd($project) }}--}}
+{{--                <div class="card shadow m-4" style="width: 19rem;">--}}
+{{--                    <div class="card-header p-2">--}}
+{{--                        --}}{{--                    <img alt="Logo creationlab" src="image/creationlab.png" width="279" height="186" />--}}
+{{--                        <h4 class="card-title"><a href="https://github.com/{{ $project['full_name'] }}" target="_blank">{{ $project['name'] }}</a></h4>--}}
+{{--                    </div>--}}
+{{--                    <div class="card-body p-2">--}}
+{{--                        <p class="card-text">{!! $project['description'] !!}</p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mt-4">
+                    <div class="box-part text-center shadow p-4" style="border: 1px solid rgba(0,0,0,.125)">
+{{--                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>--}}
+                        <div class="title">
+                            <h4>{{ $project['name'] }}</h4>
+                        </div>
+                        <div class="text">
+                            <span>{!! $project['description'] !!}.</span>
+                        </div>
+                        <a href="https://github.com/{{ $project['full_name'] }}" target="_blank">Voir le projet</a>
+                    </div>
                 </div>
-                <div class="card-body p-2">
-                    <h4 class="card-title"><a href="creationlab/">Creation Lab</a></h4>
-                    <p class="card-text">Réseaux social collaboratif</p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
