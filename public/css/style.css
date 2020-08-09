@@ -1,27 +1,27 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .titre {
-  width: auto;
-  background: #375a7f;
-  color: azure;
-  height: 5em;
+    width: auto;
+    background: #375a7f;
+    color: azure;
+    height: 5em;
 }
-.titre h3{
-  margin-top:56px;
-  padding-top: 15px;
-  padding-left: 50px;
+.titre h3 {
+    margin-top:56px;
+    padding-top: 15px;
+    padding-left: 50px;
 }
 
 section {
-  height: 100vh;
+    height: 100vh;
 }
 
-span{
+span {
     font-size:15px;
 }
-a{
+.link_project {
     text-decoration:none;
     color: #0062cc;
     border-bottom:2px solid #0062cc;
@@ -36,27 +36,27 @@ a{
     padding:60px 10px;
     margin:30px 0px;
 }
-.text{
+.text {
     margin:20px 0px;
 }
 
-.fa{
-    color:#4183D7;
-}
-
-@media screen
-and (min-device-width: 320px)
-and (max-device-width: 480px){
-  section {
-    min-height: 225vh;
-  }
+@media screen and (max-width: 480px) {
+    section {
+        min-height: 225vh;
+    }
+    .titre h3 {
+        padding-left: 0;
+    }
+    .titre {
+        text-align: center !important;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1440px) {
-  section {
-    min-height: 160vh;
-  }
+    section {
+        min-height: 160vh;
+    }
 }
 .card {
-  border-radius: 10px;
+    border-radius: 10px;
 }

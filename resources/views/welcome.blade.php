@@ -17,7 +17,7 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Portfolio</a>
+    <a class="navbar-brand" href="#">Guillaume Leon</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,26 +42,16 @@
     <div class="container">
         <div class="row">
             @foreach($response as $project)
-{{--        {{ dd($project) }}--}}
-{{--                <div class="card shadow m-4" style="width: 19rem;">--}}
-{{--                    <div class="card-header p-2">--}}
-{{--                        --}}{{--                    <img alt="Logo creationlab" src="image/creationlab.png" width="279" height="186" />--}}
-{{--                        <h4 class="card-title"><a href="https://github.com/{{ $project['full_name'] }}" target="_blank">{{ $project['name'] }}</a></h4>--}}
-{{--                    </div>--}}
-{{--                    <div class="card-body p-2">--}}
-{{--                        <p class="card-text">{!! $project['description'] !!}</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mt-4">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-4">
                     <div class="box-part text-center shadow p-4" style="border: 1px solid rgba(0,0,0,.125)">
-{{--                        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>--}}
                         <div class="title">
                             <h4>{{ $project['name'] }}</h4>
                         </div>
                         <div class="text">
                             <span>{!! $project['description'] !!}.</span>
                         </div>
-                        <a href="https://github.com/{{ $project['full_name'] }}" target="_blank">Voir le projet</a>
+                        <a class="link_project" href="https://github.com/{{ $project['full_name'] }}" target="_blank">Voir le projet</a>
                     </div>
                 </div>
             @endforeach
@@ -80,16 +70,16 @@
                     <h3 class="pt-3 pl-3">Front-End</h3>
                 </div>
                 <div class="row card-content p-4">
-                    <div class="col p-3"><img src="image/html5.png" alt="html" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="image/html5.png" alt="html" height="100" width="100">
                         <p class="text-center pt-2">HTML5</p>
                     </div>
-                    <div class="col p-3"><img src="image/css3.png" alt="css" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="image/css3.png" alt="css" height="100" width="100">
                         <p class="text-center pt-2">CSS3</p>
                     </div>
-                    <div class="col p-3"><img src="image/javascript.png" alt="javascript" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="image/javascript.png" alt="javascript" height="100" width="100">
                         <p class="text-center pt-2">Javascript</p>
                     </div>
-                    <div class="col p-3"><img src="image/bootstrap.png" alt="bootstrap" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="image/bootstrap.png" alt="bootstrap" height="100" width="100">
                         <p class="text-center pt-2">Bootstrap 4</p>
                     </div>
                 </div>
@@ -99,10 +89,10 @@
                     <h3 class="pt-3 pl-3">Back-End</h3>
                 </div>
                 <div class="row card-content p-4">
-                    <div class="col p-3"><img src="image/php.png" alt="php" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="image/php.png" alt="php" height="100" width="100">
                         <p class="text-center pt-2">PHP</p>
                     </div>
-                    <div class="col p-3"><img src="image/mysql.png" alt="MySQL" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="image/mysql.png" alt="MySQL" height="100" width="100">
                         <p class="text-center pt-2">MySQL</p>
                     </div>
                 </div>
@@ -115,7 +105,7 @@
                     <h3 class="pt-3 pl-3">Framework</h3>
                 </div>
                 <div class="row card-content p-4 text-center">
-                    <div class="col p-3"><img src="image/laravel.png" alt="Laravel" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="image/laravel.png" alt="Laravel" height="100" width="100">
                         <p class="text-center pt-2">Laravel</p>
                     </div>
                 </div>
@@ -125,14 +115,14 @@
                     <h3 class="pt-3 pl-3">Autre</h3>
                 </div>
                 <div class="row card-content p-4">
-                    <div class="col p-3"><img src="image/git.png" alt="Git" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="image/git.png" alt="Git" height="100" width="100">
                         <p class="text-center pt-2">Git</p>
                     </div>
-                    <div class="col p-3 mt-4"><img src="image/aws.png" alt="Linux" height="72"
+                    <div class="col p-3 mt-4 text-center"><img src="image/aws.png" alt="Linux" height="72"
                                                    width="120">
                         <p class="text-center pt-2">AWS</p>
                     </div>
-                    <div class="col p-3"><img src="image/linux.png" alt="Linux" height="100" width="100">
+                    <div class="col p-3 text-center"><img alt="Linux" height="100" src="image/linux.png" width="100"/>
                         <p class="text-center pt-2">Linux</p>
                     </div>
                 </div>
@@ -286,6 +276,7 @@
                         <p><i class="fas fa-envelope mr-1"></i> guillaume.leon2000@gmail.com</p>
                         <p><i class="fas fa-phone mr-1"></i> +33 06 04 01 32 95</p>
                         <p><i class="fab fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/guillaume-leon-b5382616b/" target="_blank">Linkedin</a></p>
+                        <p><i class="fab fa-github mr-2"></i><a href="https://www.github.com/GuillaumeLeon/" target="_blank">Github</a></p>
                     </div>
                 </div>
             </div>
