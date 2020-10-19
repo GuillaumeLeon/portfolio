@@ -6,10 +6,11 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Http\Request;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\App;
 
 class HomeController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
 
         if (empty(Cache::get('response'))) {
             $response = Http::get('https://api.github.com/users/GuillaumeLeon/repos');
@@ -18,7 +19,7 @@ class HomeController extends Controller
         } else {
             $response = Cache::get('response');
         }
-
+        App::setLocale($request->lang);
         return view('welcome', compact('response'));
     }
 }

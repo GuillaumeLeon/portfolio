@@ -17,7 +17,7 @@ class ContactController extends Controller
             'email'   => $request->email,
             'message' => $request->message,
         ]);
-        session()->flash('success', 'Message envoyer avec succès');
+        session()->flash('success', __('content.flash'));
         return redirect('/#contact');
     }
 }
