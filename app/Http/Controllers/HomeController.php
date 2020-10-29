@@ -15,7 +15,7 @@ class HomeController extends Controller
         if (empty(Cache::get('response'))) {
             $response = Http::get('https://api.github.com/users/GuillaumeLeon/repos');
             $response = $response->json();
-            Cache::put('response', $response);
+            Cache::put('response', $response, 300);
         } else {
             $response = Cache::get('response');
         }

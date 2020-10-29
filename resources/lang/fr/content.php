@@ -37,4 +37,6 @@ return [
     'message' => 'Message',
     'send' => 'Envoyer',
     'other_contact' => 'Autre contact',
+
+    'code' => 'Voir le code',
 ];

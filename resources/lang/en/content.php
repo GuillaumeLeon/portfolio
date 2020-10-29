@@ -12,7 +12,7 @@ return [
     /* Compétences */
     'other' => 'Other',
     /* Diplômes */
-    'highschool'  => 'Polyvalent highs chool René Cassin',
+    'highschool'  => 'Polyvalent high school René Cassin',
     'location_hs' => 'Le Raincy',
     'desc_hs' => 'Technical high school diploma',
     'more' => 'Specialization : Computer and digital system',
@@ -37,4 +37,6 @@ return [
     'message' => 'Message',
     'send' => 'send',
     'other_contact' => 'Other contact',
+
+    'code' => 'View code',
 ];

@@ -51,7 +51,6 @@
     <div class="container">
         <div class="row">
             @foreach($response as $project)
-
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
                     <div class="box-part text-center shadow p-4" style="border: 1px solid rgba(0,0,0,.125)">
                         <div class="title">
@@ -61,7 +60,7 @@
                             <span>{!! $project['description'] !!}.</span>
                         </div>
                         <a class="link_project" href="https://github.com/{{ $project['full_name'] }}"
-                           target="_blank">Voir le projet</a>
+                           target="_blank">@lang('content.code')</a>
                     </div>
                 </div>
             @endforeach
