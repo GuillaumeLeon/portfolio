@@ -59,6 +59,12 @@
                         <div class="text">
                             <span>{!! $project['description'] !!}.</span>
                         </div>
+                        @if(empty($project['homepage']))
+                            <a class="link_project disabled-link" href="{{ $project['homepage'] }}">@lang('content.goto')</a>
+                        @else
+                            <a class="link_project" href="{{ $project['homepage'] }}"> @lang('content.goto')</a>
+                        @endif
+                        |
                         <a class="link_project" href="https://github.com/{{ $project['full_name'] }}"
                            target="_blank">@lang('content.code')</a>
                     </div>

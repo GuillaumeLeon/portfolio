@@ -39,4 +39,6 @@ return [
     'other_contact' => 'Autre contact',
 
     'code' => 'Voir le code',
+
+    'goto' => 'Lien',
 ];
