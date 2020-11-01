@@ -30,7 +30,7 @@ return [
 
     /* contact */
     'contact_me' => 'Me contacter',
-    'name' => 'nom',
+    'name' => 'Nom',
     'placeholder_name' => 'Entrer votre nom',
     'email' => 'Adresse email',
     'placeholder_email' => 'Entrer votre email',
