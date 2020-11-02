@@ -31,6 +31,9 @@
                 <li><a class="nav-link" href="#experience">@lang('content.experience')</a></li>
                 <li><a class="nav-link" href="#contact">@lang('content.contact')</a></li>
                 <li><a class="nav-link" href="{{ asset('pdf/CV_Guillaume-LEON.pdf') }}" target="_blank">CV</a></li>
+                @if(Auth::check())
+                    <li><a class="nav-link" href="/dashboard">Dashboard</a></li>
+                @endif
             </ul>
         </ul>
         <ul class="navbar-nav">

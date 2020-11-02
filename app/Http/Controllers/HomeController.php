@@ -40,7 +40,7 @@ class HomeController extends Controller
         if(!Auth::check()) {
             return view('auth.login');
         } else {
-            return redirect('/dashboard/analytics');
+            return redirect('/dashboard');
         }
     }
 
