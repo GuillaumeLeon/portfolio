@@ -54,7 +54,7 @@
     <div class="container">
         <div class="row">
             @foreach($response as $project)
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-2">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-2">
                     <div class="box-part text-center shadow p-4" style="border: 1px solid rgba(0,0,0,.125)">
                         <div class="title">
                             <h4>{{ $project['name'] }}</h4>
@@ -83,74 +83,75 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-                <div class="card shadow m-4 col-sm-12 col-md-12" style="width:600px;">
-                    <div class="card-header">
-                        <h3 class="pt-3 pl-3">Front-End</h3>
+            <div class="card shadow m-4 col-sm-12 col-md-12 col-lg-8" style="width:600px;">
+                <div class="card-header">
+                    <h3 class="pt-3 pl-3">Front-End</h3>
+                </div>
+                <div class="row card-content p-4">
+                    <div class="col p-3 text-center"><img src="{{ asset('image/html5.png') }}" alt="html" height="100" width="100">
+                        <p class="text-center pt-2">HTML5</p>
                     </div>
-                    <div class="row card-content p-4">
-                        <div class="col p-3 text-center"><img src="{{ asset('image/html5.png') }}" alt="html" height="100" width="100">
-                            <p class="text-center pt-2">HTML5</p>
-                        </div>
-                        <div class="col p-3 text-center"><img src="{{ asset('image/css3.png') }}" alt="css" height="100" width="100">
-                            <p class="text-center pt-2">CSS3</p>
-                        </div>
-                        <div class="col p-3 text-center"><img src="{{ asset('image/javascript.png') }}" alt="javascript" height="100"
-                                                              width="100">
-                            <p class="text-center pt-2">Javascript</p>
-                        </div>
-                        <div class="col p-3 text-center"><img src="{{ asset('image/bootstrap.png') }}" alt="bootstrap" height="100"
-                                                              width="100">
-                            <p class="text-center pt-2">Bootstrap 4</p>
-                        </div>
+                    <div class="col p-3 text-center"><img src="{{ asset('image/css3.png') }}" alt="css" height="100" width="100">
+                        <p class="text-center pt-2">CSS3</p>
+                    </div>
+                    <div class="col p-3 text-center"><img src="{{ asset('image/javascript.png') }}" alt="javascript" height="100"
+                                                          width="100">
+                        <p class="text-center pt-2">Javascript</p>
+                    </div>
+                    <div class="col p-3 text-center"><img src="{{ asset('image/bootstrap.png') }}" alt="bootstrap" height="100"
+                                                          width="100">
+                        <p class="text-center pt-2">Bootstrap 4</p>
                     </div>
                 </div>
-                <div class="card shadow m-4 col-sm-12 col-md-6">
-                    <div class="card-header">
-                        <h3 class="pt-3 pl-3">Back-End</h3>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="card shadow m-4 col-sm-12 col-md-12 col-lg-8">
+                <div class="card-header">
+                    <h3 class="pt-3 pl-3">Back-End</h3>
+                </div>
+                <div class="row card-content p-4">
+                    <div class="col p-3 text-center"><img src="image/php.png" alt="php" height="100" width="100">
+                        <p class="text-center pt-2">PHP</p>
                     </div>
-                    <div class="row card-content p-4">
-                        <div class="col p-3 text-center"><img src="image/php.png" alt="php" height="100" width="100">
-                            <p class="text-center pt-2">PHP</p>
-                        </div>
-                        <div class="col p-3 text-center"><img src="image/mysql.png" alt="MySQL" height="100"
-                                                              width="100">
-                            <p class="text-center pt-2">MySQL</p>
-                        </div>
+                    <div class="col p-3 text-center"><img src="image/mysql.png" alt="MySQL" height="100"
+                                                          width="100">
+                        <p class="text-center pt-2">MySQL</p>
                     </div>
                 </div>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="card shadow m-4 col-sm-12 col-md-6">
-                    <div class="card-header">
-                        <h3 class="pt-3 pl-3">Framework</h3>
-                    </div>
-                    <div class="row card-content p-4 text-center">
-                        <div class="col p-3 text-center"><img src="image/laravel.png" alt="Laravel" height="100"
-                                                              width="100">
-                            <p class="text-center pt-2">Laravel</p>
-                        </div>
-                    </div>
+            <div class="card shadow m-4 col-sm-12 col-md-12 col-lg-8">
+                <div class="card-header">
+                    <h3 class="pt-3 pl-3">Framework</h3>
                 </div>
-                <div class="card shadow m-4 col-sm-12 col-md-12">
-                    <div class="card-header">
-                        <h3 class="pt-3 pl-3">@lang('content.other')</h3>
-                    </div>
-                    <div class="row card-content p-4">
-                        <div class="col p-3 text-center"><img src="image/git.png" alt="Git" height="100" width="100">
-                            <p class="text-center pt-2">Git</p>
-                        </div>
-                        <div class="col p-3 mt-4 text-center"><img src="image/aws.png" alt="Linux" height="72"
-                                                                   width="120">
-                            <p class="text-center pt-2">AWS</p>
-                        </div>
-                        <div class="col p-3 text-center"><img alt="Linux" height="100" src="image/linux.png"
-                                                              width="100" />
-                            <p class="text-center pt-2">Linux</p>
-                        </div>
+                <div class="row card-content p-4 text-center">
+                    <div class="col p-3 text-center"><img src="image/laravel.png" alt="Laravel" height="100"
+                                                          width="100">
+                        <p class="text-center pt-2">Laravel</p>
                     </div>
                 </div>
             </div>
+            <div class="card shadow m-4 col-sm-12 col-md-12 col-lg-8">
+                <div class="card-header">
+                    <h3 class="pt-3 pl-3">@lang('content.other')</h3>
+                </div>
+                <div class="row card-content p-4">
+                    <div class="col p-3 text-center"><img src="image/git.png" alt="Git" height="100" width="100">
+                        <p class="text-center pt-2">Git</p>
+                    </div>
+                    <div class="col p-3 mt-4 text-center"><img src="image/aws.png" alt="Linux" height="72"
+                                                               width="120">
+                        <p class="text-center pt-2">AWS</p>
+                    </div>
+                    <div class="col p-3 text-center"><img alt="Linux" height="100" src="image/linux.png"
+                                                          width="100" />
+                        <p class="text-center pt-2">Linux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

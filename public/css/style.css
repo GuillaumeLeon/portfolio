@@ -73,12 +73,6 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 1440px) {
-    section {
-        min-height: 160vh;
-    }
-}
-
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     section {
         min-height: 100vh;
