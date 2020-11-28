@@ -83,74 +83,74 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="card shadow m-4" style="width:600px;">
-                <div class="card-header">
-                    <h3 class="pt-3 pl-3">Front-End</h3>
+                <div class="card shadow m-4 col-sm-12 col-md-12" style="width:600px;">
+                    <div class="card-header">
+                        <h3 class="pt-3 pl-3">Front-End</h3>
+                    </div>
+                    <div class="row card-content p-4">
+                        <div class="col p-3 text-center"><img src="{{ asset('image/html5.png') }}" alt="html" height="100" width="100">
+                            <p class="text-center pt-2">HTML5</p>
+                        </div>
+                        <div class="col p-3 text-center"><img src="{{ asset('image/css3.png') }}" alt="css" height="100" width="100">
+                            <p class="text-center pt-2">CSS3</p>
+                        </div>
+                        <div class="col p-3 text-center"><img src="{{ asset('image/javascript.png') }}" alt="javascript" height="100"
+                                                              width="100">
+                            <p class="text-center pt-2">Javascript</p>
+                        </div>
+                        <div class="col p-3 text-center"><img src="{{ asset('image/bootstrap.png') }}" alt="bootstrap" height="100"
+                                                              width="100">
+                            <p class="text-center pt-2">Bootstrap 4</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row card-content p-4">
-                    <div class="col p-3 text-center"><img src="{{ asset('image/html5.png') }}" alt="html" height="100" width="100">
-                        <p class="text-center pt-2">HTML5</p>
+                <div class="card shadow m-4 col-sm-12 col-md-6">
+                    <div class="card-header">
+                        <h3 class="pt-3 pl-3">Back-End</h3>
                     </div>
-                    <div class="col p-3 text-center"><img src="{{ asset('image/css3.png') }}" alt="css" height="100" width="100">
-                        <p class="text-center pt-2">CSS3</p>
-                    </div>
-                    <div class="col p-3 text-center"><img src="{{ asset('image/javascript.png') }}" alt="javascript" height="100"
-                                                          width="100">
-                        <p class="text-center pt-2">Javascript</p>
-                    </div>
-                    <div class="col p-3 text-center"><img src="{{ asset('image/bootstrap.png') }}" alt="bootstrap" height="100"
-                                                          width="100">
-                        <p class="text-center pt-2">Bootstrap 4</p>
+                    <div class="row card-content p-4">
+                        <div class="col p-3 text-center"><img src="image/php.png" alt="php" height="100" width="100">
+                            <p class="text-center pt-2">PHP</p>
+                        </div>
+                        <div class="col p-3 text-center"><img src="image/mysql.png" alt="MySQL" height="100"
+                                                              width="100">
+                            <p class="text-center pt-2">MySQL</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card shadow m-4">
-                <div class="card-header">
-                    <h3 class="pt-3 pl-3">Back-End</h3>
-                </div>
-                <div class="row card-content p-4">
-                    <div class="col p-3 text-center"><img src="image/php.png" alt="php" height="100" width="100">
-                        <p class="text-center pt-2">PHP</p>
-                    </div>
-                    <div class="col p-3 text-center"><img src="image/mysql.png" alt="MySQL" height="100"
-                                                          width="100">
-                        <p class="text-center pt-2">MySQL</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row justify-content-center">
-            <div class="card shadow m-4">
-                <div class="card-header">
-                    <h3 class="pt-3 pl-3">Framework</h3>
+            <div class="row justify-content-center">
+                <div class="card shadow m-4 col-sm-12 col-md-6">
+                    <div class="card-header">
+                        <h3 class="pt-3 pl-3">Framework</h3>
+                    </div>
+                    <div class="row card-content p-4 text-center">
+                        <div class="col p-3 text-center"><img src="image/laravel.png" alt="Laravel" height="100"
+                                                              width="100">
+                            <p class="text-center pt-2">Laravel</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row card-content p-4 text-center">
-                    <div class="col p-3 text-center"><img src="image/laravel.png" alt="Laravel" height="100"
-                                                          width="100">
-                        <p class="text-center pt-2">Laravel</p>
+                <div class="card shadow m-4 col-sm-12 col-md-12">
+                    <div class="card-header">
+                        <h3 class="pt-3 pl-3">@lang('content.other')</h3>
+                    </div>
+                    <div class="row card-content p-4">
+                        <div class="col p-3 text-center"><img src="image/git.png" alt="Git" height="100" width="100">
+                            <p class="text-center pt-2">Git</p>
+                        </div>
+                        <div class="col p-3 mt-4 text-center"><img src="image/aws.png" alt="Linux" height="72"
+                                                                   width="120">
+                            <p class="text-center pt-2">AWS</p>
+                        </div>
+                        <div class="col p-3 text-center"><img alt="Linux" height="100" src="image/linux.png"
+                                                              width="100" />
+                            <p class="text-center pt-2">Linux</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card shadow m-4">
-                <div class="card-header">
-                    <h3 class="pt-3 pl-3">@lang('content.other')</h3>
-                </div>
-                <div class="row card-content p-4">
-                    <div class="col p-3 text-center"><img src="image/git.png" alt="Git" height="100" width="100">
-                        <p class="text-center pt-2">Git</p>
-                    </div>
-                    <div class="col p-3 mt-4 text-center"><img src="image/aws.png" alt="Linux" height="72"
-                                                               width="120">
-                        <p class="text-center pt-2">AWS</p>
-                    </div>
-                    <div class="col p-3 text-center"><img alt="Linux" height="100" src="image/linux.png"
-                                                          width="100" />
-                        <p class="text-center pt-2">Linux</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -161,7 +161,7 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-md-6 col-sm-6">
                 <div class="card shadow m-4" style="min-height: 225px;">
                     <div class="card-header">
                         <h3><a href="http://www.lyceecassin-leraincy.fr/" target="_blank">@lang('content.highschool')</a></h3>
@@ -175,7 +175,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-sm-6">
                 <div class="card shadow m-4" style="min-height: 225px;">
                     <div class="card-header">
                         <h3><a href="https://iutb.univ-paris13.fr/" target="_blank">@lang('content.dut')</a></h3>
@@ -203,7 +203,7 @@
                 <div class="card-header p-2">
                     <img class="text-center" alt="Logo groupe progress" src="image/progress.png" width="280" />
                 </div>
-                <div class="card-body p-2">
+                <div class="card-body p-3">
                     <h4 class="card-title"><a href="https://www.groupeprogress.com/" target="_blank">@lang('content.name_gp')</a></h4>
                     <p class="card-text">@lang('content.desc_gp')</p>
                 </div>
@@ -241,7 +241,7 @@
     </div>
     <div class="container mt-2">
         <div class="row">
-            <div class="col">
+            <div class="col-xl-8 col-md-12 mt-1">
                 <div class="card">
                     <div class="card-header text-white" style="background-color:#375a7f"> @lang('content.contact_me')
                     </div>
@@ -269,7 +269,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-4">
+            <div class="col-xl-4 col-sm-4 col-md-6 offset-md-3 offset-xl-0 mt-1">
                 <div class="card bg-light mb-3">
                     <div class="card-header bg-success text-white">@lang('content.other_contact')</div>
                     <div class="card-body">

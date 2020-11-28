@@ -23,7 +23,7 @@ return [
 
     /* Experience */
     'name_gp' => 'Groupe Progess',
-    'desc_gp' => 'Intern fullstack developer',
+    'desc_gp' => 'Collaboration in the design and development of web projects and reception of management needs.  Adding functionality to the virtual working environment and to the administration site. Created a learning management system.',
 
     /* flash */
     'flash' => 'Your message has been sent',

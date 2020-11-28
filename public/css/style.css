@@ -15,7 +15,7 @@ html {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 span {
@@ -78,6 +78,13 @@ a:hover {
         min-height: 160vh;
     }
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    section {
+        min-height: 100vh;
+    }
+}
+
 .card {
     border-radius: 10px;
 }

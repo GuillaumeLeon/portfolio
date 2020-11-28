@@ -23,7 +23,7 @@ return [
 
     /* Experience */
     'name_gp' => 'Groupe Progess',
-    'desc_gp' => 'Développeur web full-stack stagiaire',
+    'desc_gp' => 'Collaboration à la conception et au développement de projets web et réception des besoins des directions. Ajout de fonctionnalité à l’ENT et au site d’administration. Création d’un système de gestion de l’apprentissage.',
 
     /* flash */
     'flash' => 'Votre message a été envoyer',
