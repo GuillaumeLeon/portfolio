@@ -6,8 +6,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     <script src="{{ asset('js/font_awesome.js') }}"></script>
     <script src="{{ asset('js/jquery-3.5.1.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -38,9 +38,11 @@
         </ul>
         <ul class="navbar-nav">
             @if(isset($_GET['lang']) && $_GET['lang'] === 'en')
-                <li><a href="/"><img class="mt-1" src="{{ asset('image/united-states-of-america.png') }}" alt="Us" height="32"></a></li>
+                <li><a href="/"><img class="mt-1" src="{{ asset('image/united-states-of-america.png') }}" alt="Us"
+                                     height="32"></a></li>
             @else
-                <li><a href="/?lang=en"><img class="mt-1" src="{{ asset('image/france.png') }}" alt="FR" height="32"></a></li>
+                <li><a href="/?lang=en"><img class="mt-1" src="{{ asset('image/france.png') }}" alt="FR"
+                                             height="32"></a></li>
             @endif
         </ul>
 
@@ -54,7 +56,7 @@
     <div class="container">
         <div class="row">
             @foreach($response as $project)
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-2">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-1">
                     <div class="box-part text-center shadow p-4" style="border: 1px solid rgba(0,0,0,.125)">
                         <div class="title">
                             <h4>{{ $project['name'] }}</h4>
@@ -63,7 +65,8 @@
                             <span>{!! $project['description'] !!}.</span>
                         </div>
                         @if(empty($project['homepage']))
-                            <a class="link_project disabled-link" href="{{ $project['homepage'] }}">@lang('content.goto')</a>
+                            <a class="link_project disabled-link"
+                               href="{{ $project['homepage'] }}">@lang('content.goto')</a>
                         @else
                             <a class="link_project" href="{{ $project['homepage'] }}"> @lang('content.goto')</a>
                         @endif
@@ -88,17 +91,21 @@
                     <h3 class="pt-3 pl-3">Front-End</h3>
                 </div>
                 <div class="row card-content p-4">
-                    <div class="col p-3 text-center"><img src="{{ asset('image/html5.png') }}" alt="html" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="{{ asset('image/html5.png') }}" alt="html" height="100"
+                                                          width="100">
                         <p class="text-center pt-2">HTML5</p>
                     </div>
-                    <div class="col p-3 text-center"><img src="{{ asset('image/css3.png') }}" alt="css" height="100" width="100">
+                    <div class="col p-3 text-center"><img src="{{ asset('image/css3.png') }}" alt="css" height="100"
+                                                          width="100">
                         <p class="text-center pt-2">CSS3</p>
                     </div>
-                    <div class="col p-3 text-center"><img src="{{ asset('image/javascript.png') }}" alt="javascript" height="100"
+                    <div class="col p-3 text-center"><img src="{{ asset('image/javascript.png') }}" alt="javascript"
+                                                          height="100"
                                                           width="100">
                         <p class="text-center pt-2">Javascript</p>
                     </div>
-                    <div class="col p-3 text-center"><img src="{{ asset('image/bootstrap.png') }}" alt="bootstrap" height="100"
+                    <div class="col p-3 text-center"><img src="{{ asset('image/bootstrap.png') }}" alt="bootstrap"
+                                                          height="100"
                                                           width="100">
                         <p class="text-center pt-2">Bootstrap 4</p>
                     </div>
@@ -146,7 +153,7 @@
                         <p class="text-center pt-2">AWS</p>
                     </div>
                     <div class="col p-3 text-center"><img alt="Linux" height="100" src="image/linux.png"
-                                                          width="100" />
+                                                          width="100"/>
                         <p class="text-center pt-2">Linux</p>
                     </div>
                 </div>
@@ -165,7 +172,8 @@
             <div class="col-md-6 col-sm-6">
                 <div class="card shadow m-4" style="min-height: 225px;">
                     <div class="card-header">
-                        <h3><a href="http://www.lyceecassin-leraincy.fr/" target="_blank">@lang('content.highschool')</a></h3>
+                        <h3><a href="http://www.lyceecassin-leraincy.fr/"
+                               target="_blank">@lang('content.highschool')</a></h3>
                     </div>
                     <div class="card-content p-3">
                         <p>@lang('content.location_hs')</p>
@@ -202,10 +210,11 @@
         <div class="row justify-content-center">
             <div class="card shadow m-4" style="width: 19rem;">
                 <div class="card-header p-2">
-                    <img class="text-center" alt="Logo groupe progress" src="image/progress.png" width="280" />
+                    <img class="text-center" alt="Logo groupe progress" src="image/progress.png" width="280"/>
                 </div>
                 <div class="card-body p-3">
-                    <h4 class="card-title"><a href="https://www.groupeprogress.com/" target="_blank">@lang('content.name_gp')</a></h4>
+                    <h4 class="card-title"><a href="https://www.groupeprogress.com/"
+                                              target="_blank">@lang('content.name_gp')</a></h4>
                     <p class="card-text">@lang('content.desc_gp')</p>
                 </div>
             </div>
@@ -252,12 +261,14 @@
                             <div class="form-group">
                                 <label for="name">@lang('content.name')</label>
                                 <input type="text" class="form-control" name="name" id="name"
-                                       aria-describedby="emailHelp" placeholder="@lang('content.placeholder_name')" required>
+                                       aria-describedby="emailHelp" placeholder="@lang('content.placeholder_name')"
+                                       required>
                             </div>
                             <div class="form-group">
                                 <label for="email">@lang('content.email')</label>
                                 <input type="email" class="form-control" name="email" id="email"
-                                       aria-describedby="emailHelp" placeholder="@lang('content.placeholder_email')" required>
+                                       aria-describedby="emailHelp" placeholder="@lang('content.placeholder_email')"
+                                       required>
                             </div>
                             <div class="form-group">
                                 <label for="message">@lang('content.message')</label>
@@ -265,7 +276,8 @@
                                           required></textarea>
                             </div>
                             <div class="mx-auto">
-                                <button type="submit" class="btn btn-primary text-right">@lang('content.send')</button></div>
+                                <button type="submit" class="btn btn-primary text-right">@lang('content.send')</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -290,7 +302,8 @@
 <footer class="footer font-small bg-dark text-white mt-5">
     <div class="footer-copyright text-center py-3">
         Created by <a href="https://guillaumeleon.xyz">Guillaume Leon</a>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
 </footer>
 </body>

@@ -1,5 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+}
+
+span {
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .titre {
@@ -8,22 +25,15 @@ html {
     color: azure;
     height: 5em;
 }
+
 .titre h3 {
-    margin-top:56px;
+    margin-top: 56px;
     padding-top: 15px;
     padding-left: 50px;
 }
 
-section {
-    min-height: 100vh;
-}
-
-span {
-    font-size:15px;
-}
-
 .link_project {
-    text-decoration:none;
+    text-decoration: none;
     color: #0062cc;
 
 }
@@ -34,49 +44,19 @@ span {
     animation-fill-mode: forwards;
 }
 
-@keyframes underline {
-    from {
-    }
-
-    to {
-        border-bottom: 2px solid #0062cc;
-    }
+.box {
+    padding: 60px 0;
 }
 
-.box{
-    padding:60px 0;
+.box-part {
+    background: #FFF;
+    border-radius: 0;
+    padding: 60px 10px;
+    margin: 30px 0;
 }
 
-.box-part{
-    background:#FFF;
-    border-radius:0;
-    padding:60px 10px;
-    margin:30px 0;
-}
 .text {
-    margin:20px 0;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-@media screen and (max-width: 480px) {
-    section {
-        min-height: 225vh;
-    }
-    .titre h3 {
-        padding-left: 0;
-    }
-    .titre {
-        text-align: center !important;
-    }
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    section {
-        min-height: 100vh;
-    }
+    margin: 20px 0;
 }
 
 .card {
@@ -88,4 +68,29 @@ a:hover {
     color: gray;
     /* And disable the pointer events */
     pointer-events: none;
+}
+
+/*
+    Media query
+*/
+
+/* for smartphone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .titre h3 {
+        padding-left: 0;
+    }
+
+    .titre {
+        text-align: center !important;
+    }
+}
+
+/* Keyframe */
+@keyframes underline {
+    from {
+    }
+
+    to {
+        border-bottom: 2px solid #0062cc;
+    }
 }
